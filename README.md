@@ -20,7 +20,7 @@ Install Ultralytics Package
    pip install -U pip
 </code>
 </pre>
-3. Install ultralystics pip package with optional dependencies
+2. Install ultralystics pip package with optional dependencies
 <pre>
 <code>
   pip install ultralystics
@@ -33,19 +33,19 @@ Install Ultralytics Package
      ERROR: ...
   </code>
   </pre>
-3.1 Reinstall numpy
+2.1 Reinstall numpy
 <pre>
 <code>
    pip install numpy==1.24.4
 </code>
 </pre>
-3.2 Reinstall ultralystics pip package with optional dependencies
+2.2 Reinstall ultralystics pip package with optional dependencies
 <pre>
 <code>
   pip install ultralystics
 </code>
 </pre>
-4. Reboot the device
+3. Reboot the device
 <pre>
 <code>
   sudo reboot
