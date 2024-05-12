@@ -8,6 +8,55 @@ YOLO(You Only Look Once)
 - YOLO는 이미지를 한번만 보고 바로 Object Detection을 수행. 이미지에 대해 빠른 속도로 Object Detection을 수행할 수 있음.
 - Classification + Localization -> One-stage detection
 
+Install Ultralytics Package
+---------------------------
+1. Update pakages list, install pip and upgrade to latest
+<pre>
+<code>
+   sudo apt update
+   sudo apt install python3-pip -y
+   pip install -U pip
+</code>
+</pre>
+3. Install ultralystics pip package with optional dependencies
+<pre>
+<code>
+  pip install ultralystics
+</code>
+</pre>
+- error
+  <pre>
+  <code>
+     ERROR: scipy 1.10.1 has requirement numpy<1.27.0, >=1.19.5, but you'll have numpy 1.17.4 which is incompatible
+     ERROR: ...
+  </code>
+  </pre>
+3.1 Reinstall numpy
+<pre>
+<code>
+   pip install numpy==1.24.4
+</code>
+</pre>
+3.2 Reinstall ultralystics pip package with optional dependencies
+<pre>
+<code>
+  pip install ultralystics
+</code>
+</pre>
+4. Reboot the device
+<pre>
+<code>
+  sudo reboot
+</code>
+</pre>
+Install PyTorch and Torchvision
+-------------------------------
+Python 3.8.10
+
+PyTorch = 2.1.0a0+41361538.nv23.06
+
+Torchvision = 0.16.2+c6f3977
+
 YOLOv8
 ------
 - YOLOv8은 YOLO 최신 버전으로, Detection/Segment/Classification/Pose/OBB의 다섯가지 Task를 처리한다.
@@ -90,52 +139,4 @@ YOLOv8
             results = model.train(data='dota8.yaml', epochs=100, imgsz=640)
          </code>
          </pre>
-
-Install Ultralytics Package
----------------------------
-1. Update pakages list, install pip and upgrade to latest
-<pre>
-<code>
-   sudo apt update
-   sudo apt install python3-pip -y
-   pip install -U pip
-</code>
-</pre>
-3. Install ultralystics pip package with optional dependencies
-<pre>
-<code>
-  pip install ultralystics
-</code>
-</pre>
-- error
-  <pre>
-  <code>
-     ERROR: scipy 1.10.1 has requirement numpy<1.27.0, >=1.19.5, but you'll have numpy 1.17.4 which is incompatible
-     ERROR: ...
-  </code>
-  </pre>
-3.1 Reinstall numpy
-<pre>
-<code>
-   pip install numpy==1.24.4
-</code>
-</pre>
-3.2 Reinstall ultralystics pip package with optional dependencies
-<pre>
-<code>
-  pip install ultralystics
-</code>
-</pre>
-4. Reboot the device
-<pre>
-<code>
-  sudo reboot
-</code>
-</pre>
-Install PyTorch and Torchvision
--------------------------------
-Python 3.8.10
-
-PyTorch = 2.1.0a0+41361538.nv23.06
-
-Torchvision = 0.16.2+c6f3977
+         
