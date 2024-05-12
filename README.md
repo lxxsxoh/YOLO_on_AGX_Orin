@@ -65,6 +65,7 @@ https://elinux.org/Jetson_Zoo#ONNX_Runtime
 
 Jetpack 5.1.2, Python3.8.10 -> onnxruntime 1.17.0
 
+![KakaoTalk_20240512_220418759](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/d560278a-6793-4556-916e-68eda98bc39a)
 
 
 Install onnxruntime 1.17.0
