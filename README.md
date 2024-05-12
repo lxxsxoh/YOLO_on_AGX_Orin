@@ -30,6 +30,12 @@ Install Ultralytics Package
    pip install numpy==1.24.4
 </code>
 </pre>
+3.2 Reinstall ultralystics pip package with optional dependencies
+<pre>
+<code>
+  pip install ultralystics
+</code>
+</pre>
 4. Reboot the device
 <pre>
 <code>
