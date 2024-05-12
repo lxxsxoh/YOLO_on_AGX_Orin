@@ -16,7 +16,19 @@ Install Ultralytics Package
   pip install ultralystics
 </code>
 </pre>
-- error 
+- error
+  <pre>
+  <code>
+     ERROR: scipy 1.10.1 has requirement numpy<1.27.0, >=1.19.5, but you'll have numpy 1.17.4 which is incompatible
+     ERROR: ...
+  </code>
+  </pre>
+3.1 Reinstall numpy
+<pre>
+<code>
+   pip install numpy==1.24.4
+</code>
+</pre>
 4. Reboot the device
 <pre>
 <code>
@@ -26,5 +38,7 @@ Install Ultralytics Package
 Install PyTorch and Torchvision
 -------------------------------
 Python 3.8.10
+
 PyTorch = 2.1.0a0+41361538.nv23.06
+
 Torchvision = 0.16.2+c6f3977
