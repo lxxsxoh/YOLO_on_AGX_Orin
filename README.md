@@ -8,7 +8,7 @@ YOLO(You Only Look Once)
 - YOLO는 이미지를 한번만 보고 바로 Object Detection을 수행. 이미지에 대해 빠른 속도로 Object Detection을 수행할 수 있음.
 - Classification + Localization -> One-stage detection
 - region proposal, feature extraction, classification, bbox regression
-- CNN
+- CNN 딥러닝 모델을 기반으로 특징을 추출한 뒤 물체의 종류와 위치를 예측함.
 
 #### YOLOv8 model 설치를 위해 Ultralytics Package를 설치해준다.
 
