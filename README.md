@@ -59,6 +59,30 @@ PyTorch = 2.1.0a0+41361538.nv23.06
 
 Torchvision = 0.16.2+c6f3977
 
+https://elinux.org/Jetson_Zoo#ONNX_Runtime 
+
+Jetpack 5.1.2, Python3.8.10 -> onnxruntime 1.17.0
+
+Install onnxruntime 1.17.0
+---------------------------
+1.
+<pre>
+   <code>
+      pip install onnxruntime-gpu
+   </code>
+</pre>
+
+2.
+<pre>
+   <code>
+      # Download pip wheel from location above for your version of JetPack
+      $ wget https://nvidia.box.com/shared/static/iizg3ggrtdkqawkmebbfixo7sce6j365.whl -O onnxruntime_gpu-1.17.0-cp38-cp38-linux_aarch64.whl
+
+      # Install pip wheel
+      $ pip3 install onnxruntime_gpu-1.17.0-cp38-cp38-linux_aarch64.whl
+   </code>
+</pre>
+
 YOLOv8
 ------
 - YOLOv8은 YOLO 최신 버전으로, Detection/Segment/Classification/Pose/OBB의 다섯가지 Task를 처리한다.
