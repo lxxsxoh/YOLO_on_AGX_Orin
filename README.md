@@ -6,6 +6,20 @@ YOLOv8
 - YOLOv8은 YOLO 최신 버전으로, Detection/Segment/Classification/Pose/OBB의 다섯가지 Task를 처리한다.
    - Detection: task that involves identifying the location and class of objects in an image or video stream.
       - Detection의 output은 사물을 가리키는 사각형과 그 사물이 뭔지, 어느정도 일치하는지까지를 나타낸다.
+     ### Train
+        <pre>
+         <code>
+            from ultralytics import YOLO
+
+# Load a model
+model = YOLO('yolov8n.yaml')  # build a new model from YAML
+model = YOLO('yolov8n.pt')  # load a pretrained model (recommended for training)
+model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # build from YAML and transfer weights
+
+# Train the model
+results = model.train(data='coco8.yaml', epochs=100, imgsz=640)
+         </code>
+        </pre>
    - Segment: a step further than detection and involves identifying individual objects in an image and segmenting them from he rest of image.
       - Segment는 detection보다 더 세밀한 task로, object의 outline을 따서 물체를 구분한다.
    - Classification: the simplest of the three tasks and involves classifying an entire image into one of a set of predefined classes.
