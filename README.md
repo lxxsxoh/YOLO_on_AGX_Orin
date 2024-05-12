@@ -1,6 +1,11 @@
 YOLO_on_AGX_Orin
 Start without Docker
 ====================
+YOLO(You Only Look Once)
+------------------------
+- YOLO는 이미지를 한번만 보고 바로 Object Detection을 수행. 이미지에 대해 빠른 속도로 Object Detection을 수행할 수 있음.
+- Classification + Localization -> One-stage detection
+
 YOLOv8
 ------
 - YOLOv8은 YOLO 최신 버전으로, Detection/Segment/Classification/Pose/OBB의 다섯가지 Task를 처리한다.
