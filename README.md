@@ -3,7 +3,16 @@ Start without Docker
 ====================
 YOLOv8
 ------
-- YOLOv8
+- YOLOv8은 YOLO 최신 버전으로, Detection/Segment/Classification/Pose/OBB의 다섯가지 Task를 처리한다.
+   - Detection: task that involves identifying the location and class of objects in an image or video stream.
+      - Detection의 output은 사물을 가리키는 사각형과 그 사물이 뭔지, 어느정도 일치하는지까지를 나타낸다.
+   - Segment: a step further than detection and involves identifying individual objects in an image and segmenting them from he rest of image.
+      - Segment는 detection보다 더 세밀한 task로, object의 outline을 따서 물체를 구분한다.
+   - Classification: the simplest of the three tasks and involves classifying an entire image into one of a set of predefined classes.
+     - Image에 뭐가 있는지 알고 싶고, 위치는 따로 알 필요 없을 때 사용하는 task이다.
+   - Pose: a task that involves identifying the location of specific points in an image, usually referred to as keypoints.
+     - pose를 알고 싶을 때, keypoint와 선으로 output이 표시된다.
+   - OBB(Oriented Bounding Boxes Object Detection): a step further than object detection and introduce an extra angle to locate object more accurate in an image.
 
 Install Ultralytics Package
 ---------------------------
