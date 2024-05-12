@@ -11,13 +11,13 @@ YOLOv8
          <code>
             from ultralytics import YOLO
 
-# Load a model
-model = YOLO('yolov8n.yaml')  # build a new model from YAML
-model = YOLO('yolov8n.pt')  # load a pretrained model (recommended for training)
-model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # build from YAML and transfer weights
+            # Load a model
+            model = YOLO('yolov8n.yaml')  # build a new model from YAML
+            model = YOLO('yolov8n.pt')  # load a pretrained model (recommended for training)
+            model = YOLO('yolov8n.yaml').load('yolov8n.pt')  # build from YAML and transfer weights
 
-# Train the model
-results = model.train(data='coco8.yaml', epochs=100, imgsz=640)
+            # Train the model
+            results = model.train(data='coco8.yaml', epochs=100, imgsz=640)
          </code>
         </pre>
    - Segment: a step further than detection and involves identifying individual objects in an image and segmenting them from he rest of image.
