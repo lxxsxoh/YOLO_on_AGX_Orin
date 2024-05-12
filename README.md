@@ -1,6 +1,8 @@
 YOLO_on_AGX_Orin
 Start without Docker
 ====================
+## This repository provides software and hardware setup, and object detection using Yolov8 on NVIDIA Jetson AGX Orin.
+
 YOLO(You Only Look Once)
 ------------------------
 - YOLO는 이미지를 한번만 보고 바로 Object Detection을 수행. 이미지에 대해 빠른 속도로 Object Detection을 수행할 수 있음.
