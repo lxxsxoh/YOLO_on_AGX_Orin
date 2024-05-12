@@ -22,11 +22,67 @@ YOLOv8
         </pre>
    - Segment: a step further than detection and involves identifying individual objects in an image and segmenting them from he rest of image.
       - Segment는 detection보다 더 세밀한 task로, object의 outline을 따서 물체를 구분한다.
+   ### Train
+        <pre>
+         <code>
+            from ultralytics import YOLO
+
+            # Load a model
+            model = YOLO('yolov8n-seg.yaml')  # build a new model from YAML
+            model = YOLO('yolov8n-seg.pt')  # load a pretrained model (recommended for training)
+            model = YOLO('yolov8n-seg.yaml').load('yolov8n.pt')  # build from YAML and transfer weights
+
+            # Train the model
+            results = model.train(data='coco8-seg.yaml', epochs=100, imgsz=640)
+         </code>
+        </pre>
    - Classification: the simplest of the three tasks and involves classifying an entire image into one of a set of predefined classes.
      - Image에 뭐가 있는지 알고 싶고, 위치는 따로 알 필요 없을 때 사용하는 task이다.
+   ### Train
+        <pre>
+         <code>
+            from ultralytics import YOLO
+
+            # Load a model
+            model = YOLO('yolov8n-cls.yaml')  # build a new model from YAML
+            model = YOLO('yolov8n-cls.pt')  # load a pretrained model (recommended for training)
+            model = YOLO('yolov8n-cls.yaml').load('yolov8n-cls.pt')  # build from YAML and transfer weights
+
+            # Train the model
+            results = model.train(data='mnist160', epochs=100, imgsz=64)
+         </code>
+        </pre>
    - Pose: a task that involves identifying the location of specific points in an image, usually referred to as keypoints.
      - pose를 알고 싶을 때, keypoint와 선으로 output이 표시된다.
+   ### Train
+        <pre>
+         <code>
+            from ultralytics import YOLO
+
+            # Load a model
+            model = YOLO('yolov8n-pose.yaml')  # build a new model from YAML
+            model = YOLO('yolov8n-pose.pt')  # load a pretrained model (recommended for training)
+            model = YOLO('yolov8n-pose.yaml').load('yolov8n-pose.pt')  # build from YAML and transfer weights
+
+            # Train the model
+            results = model.train(data='coco8-pose.yaml', epochs=100, imgsz=640)
+         </code>
+        </pre>
    - OBB(Oriented Bounding Boxes Object Detection): a step further than object detection and introduce an extra angle to locate object more accurate in an image.
+   ### Train
+        <pre>
+         <code>
+            from ultralytics import YOLO
+
+            # Load a model
+            model = YOLO('yolov8n-obb.yaml')  # build a new model from YAML
+            model = YOLO('yolov8n-obb.pt')  # load a pretrained model (recommended for training)
+            model = YOLO('yolov8n-obb.yaml').load('yolov8n.pt')  # build from YAML and transfer weights
+
+            # Train the model
+            results = model.train(data='dota8.yaml', epochs=100, imgsz=640)
+         </code>
+        </pre>
 
 Install Ultralytics Package
 ---------------------------
