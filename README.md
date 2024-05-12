@@ -1,7 +1,7 @@
 YOLO_on_AGX_Orin
 Start without Docker
 ====================
-## This repository provides software and hardware setup, and object detection using Yolov8 on NVIDIA Jetson AGX Orin.
+#### This repository provides software and hardware setup, and object detection using Yolov8 on NVIDIA Jetson AGX Orin.
 
 YOLO(You Only Look Once)
 ------------------------
