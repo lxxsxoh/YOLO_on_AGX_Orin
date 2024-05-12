@@ -83,6 +83,33 @@ Install onnxruntime 1.17.0
    </code>
 </pre>
 
+Convert Model to TensorRT and Run Inference
+-------------------------------------------
+
+<pre>
+   <code>
+      python3 y0.py
+   </code>
+</pre>
+- error
+- <pre>
+   <code>
+      ModuleNotFoundError: No module named 'onnx'
+   </code>
+</pre>
+- install onnx
+- <pre>
+   <code>
+      pip install onnx
+   </code>
+</pre>
+<pre>
+   <code>
+      python3.y0.py
+   </code>
+</pre>
+
+
 YOLOv8
 ------
 - YOLOv8은 YOLO 최신 버전으로, Detection/Segment/Classification/Pose/OBB의 다섯가지 Task를 처리한다.
