@@ -1,6 +1,10 @@
 YOLO_on_AGX_Orin
 Start without Docker
 ====================
+YOLOv8
+------
+- YOLOv8
+
 Install Ultralytics Package
 ---------------------------
 1. Update pakages list, install pip and upgrade to latest
