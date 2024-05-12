@@ -65,6 +65,8 @@ https://elinux.org/Jetson_Zoo#ONNX_Runtime
 
 Jetpack 5.1.2, Python3.8.10 -> onnxruntime 1.17.0
 
+
+
 Install onnxruntime 1.17.0
 ---------------------------
 1.
@@ -85,6 +87,7 @@ Install onnxruntime 1.17.0
    </code>
 </pre>
 
+![KakaoTalk_20240512_220227124](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/6192f888-6808-42ef-92cb-bedab85eb9e1)
 
 
 Convert Model to TensorRT and Run Inference
