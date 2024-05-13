@@ -117,6 +117,7 @@ Convert Model to TensorRT and Run Inference
    </code>
 </pre>
 
+![image](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/4d9b5ef5-22a1-4943-a49a-cbd525a4caee)
 
 YOLOv8
 ------
