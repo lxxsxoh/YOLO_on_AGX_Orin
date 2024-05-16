@@ -90,6 +90,36 @@ Install onnxruntime 1.17.0
 
 ![KakaoTalk_20240512_220227124](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/6192f888-6808-42ef-92cb-bedab85eb9e1)
 
+onnxruntime-gpu will automatically revert back the numpy version to latest. So we need to reinstall numpy to 1.23.5 to fix an issue by executing:
+------------------------
+<pre>
+   <code>
+      pip install numpy==1.23.5
+   </code>
+</pre>
+
+Install onnx 1.9.0
+------------------
+1.
+<pre>
+   <code>
+      sudo apt-get install protobuf-compiler libprotobuf-dev
+   </code>
+</pre>
+
+2.
+<pre>
+   <code>
+      python3 -m pip install --upgrade pip
+   </code>
+</pre>
+
+3.
+<pre>
+   <code>
+      pip install onnx==1.9.0
+   </code>
+</pre>
 
 Convert Model to TensorRT and Run Inference
 -------------------------------------------
@@ -99,25 +129,6 @@ Convert Model to TensorRT and Run Inference
       python3 y0.py
    </code>
 </pre>
-- error
-- <pre>
-   <code>
-      ModuleNotFoundError: No module named 'onnx'
-   </code>
-</pre>
-- install onnx
-- <pre>
-   <code>
-      pip install onnx
-   </code>
-</pre>
-<pre>
-   <code>
-      python3.y0.py
-   </code>
-</pre>
-
-![image](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/4d9b5ef5-22a1-4943-a49a-cbd525a4caee)
 
 YOLOv8
 ------
