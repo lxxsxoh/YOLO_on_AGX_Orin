@@ -142,6 +142,7 @@ YOLOv8
             results = model.train(data='coco8.yaml', epochs=100, imgsz=640)
          </code>
         </pre>
+        ![KakaoTalk_20240520_214246835](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/008acbfb-6fae-4126-971b-648e356d3d9a)
    - Segment: a step further than detection and involves identifying individual objects in an image and segmenting them from he rest of image.
       - Segment는 detection보다 더 세밀한 task로, object의 outline을 따서 물체를 구분한다.
      ### Train
