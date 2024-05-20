@@ -159,7 +159,7 @@ YOLOv8
             results = model.train(data='coco8-seg.yaml', epochs=100, imgsz=640)
          </code>
       </pre>
-         ![KakaoTalk_20240520_222936822](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/eeb6272e-0a45-4460-92f8-546d6223fa1e)
+  ![KakaoTalk_20240520_222936822](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/eeb6272e-0a45-4460-92f8-546d6223fa1e)
    - Classification: the simplest of the three tasks and involves classifying an entire image into one of a set of predefined classes.
      - Image에 뭐가 있는지 알고 싶고, 위치는 따로 알 필요 없을 때 사용하는 task이다.
      ### Train
