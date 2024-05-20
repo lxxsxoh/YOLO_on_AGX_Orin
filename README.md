@@ -121,14 +121,7 @@ Install onnx 1.9.0
    </code>
 </pre>
 
-Convert Model to TensorRT and Run Inference
--------------------------------------------
-
-<pre>
-   <code>
-      python3 y0.py
-   </code>
-</pre>
+![KakaoTalk_20240520_202457953](https://github.com/lxxsxoh/YOLO_on_AGX_Orin/assets/136955006/812eb694-d218-4595-8073-b1d785479848)
 
 YOLOv8
 ------
